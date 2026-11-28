@@ -11,6 +11,7 @@ from torchvision import transforms, datasets
 from torchvision.transforms import v2
 from torch.utils.data import random_split, DataLoader
 from torchmetrics.classification import BinaryAccuracy
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 from transformers import AutoImageProcessor, AutoModelForImageClassification, get_linear_schedule_with_warmup
 from peft import LoraConfig, TaskType, get_peft_model, PeftModel
 import ssl
